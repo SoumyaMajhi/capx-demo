@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapX - AI-powered Trading Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="q-page">
+        <div class="q-logo">Cap<strong>X</strong></div>
+    <div id="questionnaire">
+        <div class="card" id="question1">
+            <button class="close-btn" onclick="closeCard()">&times;</button>
+            <div class="q1-div">
+                <h1>Have you ever <span>engaged</span> in <span>high-frequency</span> trading strategies?</h1>
+            </div>
+            <!-- <input type="text" id="answer1"> -->
+            <div class="a1-div">
+                <button class="btn" id="yes" value="yes" onclick="nextQuestion(1)">Yes</button>
+                <button class="btn" id="no" value="no"onclick="nextQuestion(1)">No</button>
+            </div>
+        </div>
+        <div class="card" id="question2">
+            <button class="close-btn" onclick="closeCard()">&times;</button>
+            <div class="q2-div">
+                <h1>Which of these problems has affected you the most?</h1>
+            </div>
+            <div class="a2-div">
+                <div class="options2">
+                    <button class="option" onclick="selectOption(2, this)">Knowledge gap in understanding the basic trading terms</button>
+                    <button class="option" onclick="selectOption(2, this)">Too much noise in the market distracts you from the correct information</button>
+                    <button class="option" onclick="selectOption(2, this)">Trading seems too complex and no clear trusted learning path to get started</button>
+                    <button class="option" onclick="selectOption(2, this)">Suffering too much losses in the market</button>
+                    <button class="option" onclick="selectOption(2, this)">Making rash decisions or quit the stock market due to lack of time</button>
+                    <button class="option" onclick="selectOption(2, this)">Don't know why you are making or losing money</button>
+                </div>
+                <button class="btn" id="next" value="next" onclick="nextQuestion(2)">Next</button>
+            </div>
+        </div>
+        <div class="card" id="question3">
+            <button class="close-btn" onclick="closeCard()">&times;</button>
+            <div class="q3-div">
+                <h1>What does NSE stand for?</h1>
+            </div>
+            <div class="a3-div">
+                <div class="options3">
+                    <button class="option" onclick="selectOption(3, this)">National Stock Exchange of India</button>
+                    <button class="option" onclick="selectOption(3, this)">New Stock Exchange India</button>
+                    <button class="option" onclick="selectOption(3, this)">Northern Stock Exchange</button>
+                    <button class="option" onclick="selectOption(3, this)">None of the above</button>
+                </div>
+                <button class="btn" id="submit" value="submit" onclick="nextQuestion(3)">Submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- style="display:none;" -->
+    <div id="titleScreen" style="display:none;">
+        <nav>
+            <div class="logo" >Cap<strong>X</strong></div> 
+            <div class="line"></div>
+            <button id="waitlist-btn">Join Waitlist</button>
+            <div class="line"></div>
+            <button id="menu-btn">&#9776;</button>
+         </nav>
+        
+         <div class="hero">
+            <h1>An AI-powered <br>
+                trading platform that <br>
+                works as your <br>
+                personal assistant</h1><p class="tagline">Research to investing, all-in-one place</p>
+         </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

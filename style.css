@@ -1,0 +1,377 @@
+/* General body styling */
+body {
+    font-family: "Poppins", sans-serif; /* Font styling */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: auto;
+    background-color: #101115; /* Dark background */
+    color: white; /* White text color */
+}
+
+/* Styling for the logo section in the questionnaire */
+.q-logo {
+    height: 10%; /* Set height of the logo */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for alignment */
+    align-items: baseline;
+    justify-content: center; /* Center the content */
+    font: 600 5vh "Montserrat", sans-serif; /* Font styling */
+    color: #ed8e36; /* Orange text color */
+    padding-top: 2%; /* Padding at the top */
+}
+
+/* Styling for strong text elements, including gradient text */
+strong {
+    font-size: 6vh;
+    font-weight: bold;
+    background: linear-gradient(204.45deg, #019E07 3.4%, #015804 95%); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    background-clip: text; /* For non-WebKit browsers */
+}
+
+/* Main container for the questionnaire */
+#questionnaire {
+    background-color: #000000; /* Black background */
+    min-height: 65vh; /* Minimum height */
+    margin: 0 5% 7% 5%; /* Margin from sides and bottom */
+    border-radius: 3vh; /* Rounded corners */
+    border: 2px solid #5E5E5E; /* Border styling */
+    padding: 3em 4.5rem 4.5rem 4.5rem; /* Padding inside the container */
+    position: relative; /* Positioning context */
+}
+
+/* Styling for the first question div */
+.q1-div {
+    display: flex; /* Flexbox layout */
+    max-width: 70vw; /* Maximum width */
+    font-size: 4.5vh; /* Font size */
+    color: white; /* White text */
+}
+
+/* Styling for highlighted span elements */
+span {
+    color: #ed8e36; /* Orange text color */
+}
+
+/* Basic Button Styling */
+.btn {
+    background-color: #ed8e36; /* Orange background */
+    color: #000000; /* Black text */
+    border: none; /* Remove border */
+    padding: 0.5em 3em; /* Padding */
+    text-align: center;
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 4vh; /* Font size */
+    font-weight: 500;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 100px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Special styling for 'No' button */
+.btn#no {
+    color: white;
+    background-color: #5E5E5E; /* Gray background */
+    margin-left: 2em;
+}
+
+/* Hover effect for buttons */
+.btn:hover, #waitlist-btn:hover {
+    background-color: #905d10; /* Darker orange on hover */
+}
+
+/* Focus effect for buttons */
+.btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 10px rgba(213, 128, 24, 0.5); /* Add shadow on focus */
+}
+
+/* Styling for the close button on the questionnaire cards */
+.close-btn {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+/* Question 2 and 3 container styling */
+.q2-div, .q3-div {
+    flex: 1 1 65%; /* Flexbox for size and alignment */
+    font-size: 3.5vh; /* Font size */
+    padding-right: 4vw; /* Right padding */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Answer container styling for questions 2 and 3 */
+.a2-div, .a3-div {
+    display: flex;
+    flex-direction: column; /* Stack answers vertically */
+    gap: 3vh; /* Vertical gap between elements */
+    align-items: center;
+    padding: 4vw 6vw 0 0; /* Padding */
+}
+
+/* Options container styling */
+.options2, .options3 {
+    display: flex;
+    flex-direction: column; /* Stack options vertically */
+    gap: 2vh; /* Gap between options */
+    align-self: flex-start;
+}
+
+/* Styling for individual options */
+.option {
+    font: 500 2vh "Poppins", sans-serif; /* Font styling */
+    display: flex;
+    text-decoration: none; /* No underline */
+    text-align: center;
+    font-size: 2.3vh; /* Font size */
+    font-weight: 500;
+    background-color: #101115; /* Dark background */
+    color: #ffffff; /* White text */
+    border: 1px solid #ed8e36; /* Orange border */
+    padding: 1em 3em; /* Padding */
+    align-items: center; /* Align items vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 20px; /* Rounded corners */
+    height: 3.5em; /* Fixed height */
+}
+
+/* Styling for selected options */
+.option.selected {
+    background-color: #ed8e36; /* Orange background when selected */
+}
+
+/* Button styling adjustments for next and submit buttons */
+.btn#next, .btn#submit {
+    font-size: 3vh;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 3vh; /* Padding around the nav */
+    margin-top: 6vh; /* Top margin */
+    background: linear-gradient(109.37deg, rgba(51, 50, 50, 0.264) 10.11%, rgba(51, 50, 50, 0.066) 101.56%);
+    width: fit-content; /* Adjust width based on content */
+    border-radius: 2vh; /* Rounded corners */
+}
+
+/* Styling for the logo inside the navigation bar */
+.logo {
+    font-weight: bold;
+    color: #ed8e36; /* Orange color */
+    font: 500 5vh "Montserrat", sans-serif; /* Font styling */
+}
+
+/* Strong text inside the logo */
+.logo > strong {
+    font-size: 6vh;
+}
+
+/* Styling for the waitlist button */
+#waitlist-btn {
+    background-color: #ed8e36; /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: none; /* Remove border */
+    padding: 0.5em 1.5em; /* Padding */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font: 500 2vh "Poppins", sans-serif; /* Font styling */
+}
+
+/* Divider line styling */
+.line {
+    width: 1px;
+    height: 2vh;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    margin: 0 1.5vh;
+}
+
+/* Styling for the menu button */
+#menu-btn {
+    background: none;
+    border: none;
+    color: #ed8e36; /* Orange text */
+    font-size: 3vh;
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hero section styling */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text */
+}
+
+/* Hero section heading styling */
+.hero > h1 {
+    font: 700 6vh "Poppins", sans-serif; /* Font styling */
+    margin: 0; /* Remove margin */
+}
+
+/* Hero section paragraph styling */
+.hero > p {
+    margin-top: 1vh; /* Top margin */
+    font-size: 3vh; /* Font size */
+}
+
+/* Media query for mobile version (e.g., iPhone 14 Pro Max) */
+@media only screen and (max-width: 767px) {
+    body {
+        background: rgba(0, 0, 0, 0.849); /* Semi-transparent background */
+        backdrop-filter: blur(5px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(5px);
+    }
+    
+    /* Adjustments for the first question div */
+    .q1-div {
+        font-size: 3vw;
+        top: 50vh;
+        margin: 10vh 0 4vh 0;
+    }
+    
+    .a1-div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    /* Adjust padding for questionnaire */
+    #questionnaire {
+        padding: 2em 2rem;
+        text-align: center; /* Center align text */
+    }
+
+    /* Adjust button styling for mobile */
+    .btn {
+        padding: 0.5vh 3vh;
+        font-size: 2.5vh;
+    }
+
+    /* Special styling for 'No' button on mobile */
+    .btn#no {
+        color: white;
+        background-color: #5E5E5E;
+        margin-left: 2em;
+    }
+
+    /* Close button adjustments for mobile */
+    .close-btn {
+        position: absolute;
+        top: 1vh;
+        right: 1vh;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 4vh;
+        cursor: pointer;
+    }
+
+    /* Flex direction adjustments for mobile */
+    #question2, #question3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Font size adjustments for question 2 and 3 on mobile */
+    .q2-div, .q3-div {
+        font-size: 3vw;
+    }
+
+    /* Padding adjustments for options on mobile */
+    .options2, .options3 {
+        padding-left: 2vh;
+    }
+
+    /* Option styling adjustments for mobile */
+    .option {
+        font: 400 1.3vh "Poppins", sans-serif;
+        padding: 1em 3em;
+        height: 6vh;
+    }
+
+    /* Button size adjustments for next and submit buttons on mobile */
+    .btn#next, .btn#submit {
+        font-size: 1.7vh;
+    }
+
+    /* Navigation bar adjustments for mobile */
+    nav {
+        padding: 1vh 3vw;
+        margin-top: 4vh;
+        background: linear-gradient(109.37deg, rgba(51, 50, 50, 0.4) 10.11%, rgba(51, 50, 50, 0.1) 101.56%);
+        width: 80%; /* Adjust width for mobile */
+        justify-content: space-between; /* Space out nav items */
+        border-radius: 3vw; /* Rounded corners */
+    }
+
+    /* Hide waitlist button and line divider on mobile */
+    #waitlist-btn, .line {
+        display: none;
+    }
+
+    /* Title screen adjustments for mobile */
+    #titleScreen {
+        background: #101115;
+        height: 100vh;
+    }
+
+    /* Hero section heading adjustments for mobile */
+    .hero > h1 {
+        font-size: 3vh;
+    }
+
+    /* Hero section paragraph adjustments for mobile */
+    .hero > p {
+        font-size: 1.87vh;
+    }
+}
+
+/* Show/hide different questions */
+#question1 {
+    display: block; /* Display first question */
+}
+
+#question2 {
+    display: flex; /* Display second question */
+    gap: 2vw;
+}
+
+#question3 {
+    display: flex; /* Display third question */
+    gap: 2vw;
+}
+
+/* Questionnaire container styling */
+#questionnaire {
+    display: block; /* Display questionnaire container */
+}
+
+/* Full page styling for question page */
+#q-page {
+    width: auto;
+    height: 100vh;
+}
+
+/* Title screen styling */
+#titleScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
